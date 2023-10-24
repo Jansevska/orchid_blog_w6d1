@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block header %}
+    <h1 class="display-4">Here are some of my favorite orchids</h1>
+{% endblock %}
+
+{% block content %}
+<div class="mt-5">
+<img src="https://www.orchidweb.com/product_images/uploaded_images/flowerheader.jpg" class="img-fluid mx-auto d-block" alt="many colorful orchids" style="border-radius: 10px;">
+
+<a class="btn btn-outline-dark w-100" href="{{ url_for('topfive') }}"style="margin-top: 10px;">More About Orchids</a>
+</div>
+{% endblock %}
